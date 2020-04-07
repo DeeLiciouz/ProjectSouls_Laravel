@@ -1,3 +1,12 @@
+<?php
+
+function isSecure() {
+    return
+        (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+        || $_SERVER['SERVER_PORT'] == 443;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -10,11 +19,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ mix('css/layout.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/layout.css', isSecure()) }}" rel="stylesheet">
 </head>
 <body>
-<div class="flex-center position-ref full-height">
-    @yield('content')
+<div class="flex-col position-ref full-height">
+    @include('modules.nav.topnav')
+    <div id="content" class="flex-center full-height">
+        @yield('content')
+    </div>
+
 </div>
 
 <!-- Scripts -->
