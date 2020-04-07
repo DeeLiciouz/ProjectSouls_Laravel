@@ -9,7 +9,6 @@ class ArticlesController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
      */
     public function index()
     {
@@ -36,76 +35,64 @@ class ArticlesController extends Controller
      */
     public function store(Request $request)
     {
-        request()->validate([
-            'title' => 'required',
-            'excerpt' => 'required',
-            'body' => 'required',
-        ]);
+        $article = Article::create($this->validateArticle());
 
-        $article = new Article();
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-
-        $article->save();
-
-        return redirect('/news');
+        return redirect(route('article.index'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  $id
+     * @param \App\Article $article
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show($id)
+    public function show(Article $article)
     {
-        $article = Article::find($id);
-
         return view('content.articles.show', compact('article'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param $id
+     * @param \App\Article $article
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function edit($id)
+    public function edit(Article $article)
     {
-        $article = Article::find($id);
-
         return view('content.articles.edit', compact('article'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param $id
+     * @param \App\Article $article
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function update($id)
+    public function update(Article $article)
     {
+        $article->update($this->validateArticle());
 
-        $article = Article::find($id);
-
-        $article->title = request('title');
-        $article->excerpt = request('excerpt');
-        $article->body = request('body');
-
-        $article->save();
-
-        return redirect('/news/'. $id);
+        return redirect($article->getPath());
     }
 
     /**
      * Remove the specified resource from storage.
      *
      * @param \App\Article $article
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function destroy(Article $article)
     {
+        $article->delete();
 
+        return redirect(route('article.index'));
+    }
+
+    protected function validateArticle(){
+        return request()->validate([
+            'title' => 'required',
+            'excerpt' => 'required',
+            'body' => 'required',
+        ]);
     }
 }

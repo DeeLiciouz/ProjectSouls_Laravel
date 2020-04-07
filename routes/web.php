@@ -19,11 +19,9 @@ Route::get('/', function () {
 
 //News & Articles
 Route::post('/news', 'ArticlesController@store');
-Route::get('/news', 'ArticlesController@index');
+Route::put('/news/{article}', 'ArticlesController@update');
+Route::delete('/news/{article}', 'ArticlesController@destroy');
+Route::get('/news', 'ArticlesController@index')->name('article.index');
 Route::get('/news/create', 'ArticlesController@create');
-Route::get('/news/{id}/edit', 'ArticlesController@edit');
-Route::put('/news/{id}','ArticlesController@update');
-Route::delete('/news/{id}','ArticlesController@destroy');
-Route::get('/news/{id}', 'ArticlesController@show');
-
-
+Route::get('/news/{article}/edit', 'ArticlesController@edit');
+Route::get('/news/{article}', 'ArticlesController@show')->name('article.show');
