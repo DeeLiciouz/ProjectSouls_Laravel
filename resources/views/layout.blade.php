@@ -20,6 +20,8 @@ function isSecure() {
 
     <!-- Styles -->
     <link href="{{ mix('css/layout.css', isSecure()) }}" rel="stylesheet">
+    @yield('head')
+
 </head>
 <body>
 <div class="flex-col position-ref full-height">

@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ffe18c-140d-4381-97ca-bfed74cd4b69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/modules/nav/topnav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ProjectSouls.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ProjectSouls.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/destroy.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/migrate.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/layout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Laravel Controller" />
+        <option value="Blade Content-Template" />
       </list>
     </option>
   </component>
@@ -145,7 +145,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -185,7 +185,8 @@
       <workItem from="1586042865535" duration="1272000" />
       <workItem from="1586048683507" duration="1716000" />
       <workItem from="1586063592224" duration="4593000" />
-      <workItem from="1586238351964" duration="3853000" />
+      <workItem from="1586238351964" duration="7500000" />
+      <workItem from="1586271000227" duration="12958000" />
     </task>
     <servers />
   </component>
@@ -213,20 +214,24 @@
       <screen x="2560" y="0" width="2560" height="1040" />
     </state>
     <state width="1234" height="281" key="GridCell.Tab.0.right/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586230485209" />
-    <state x="3034" y="446" key="NewPhpFileDialog" timestamp="1586241245559">
-      <screen x="2560" y="0" width="2560" height="1040" />
+    <state x="474" y="446" key="NewPhpFileDialog" timestamp="1586274720670">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="474" y="446" key="NewPhpFileDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586043353480" />
+    <state x="474" y="446" key="NewPhpFileDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586274720670" />
     <state x="3034" y="446" key="NewPhpFileDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241245559" />
-    <state x="3341" y="162" key="SettingsEditor" timestamp="1586241590567">
-      <screen x="2560" y="0" width="2560" height="1040" />
+    <state x="1222" y="176" key="SettingsEditor" timestamp="1586288298420">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="781" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1585938550788" />
+    <state x="1222" y="176" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586288298420" />
     <state x="3341" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241590567" />
-    <state x="2903" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586238352748">
+    <state x="2903" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586271000596">
       <screen x="2560" y="0" width="2560" height="1040" />
     </state>
     <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586063648352" />
-    <state x="2903" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586238352748" />
+    <state x="2903" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586271000596" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586277507540">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586277507540" />
   </component>
 </project>
