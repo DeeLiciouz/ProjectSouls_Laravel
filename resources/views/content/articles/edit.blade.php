@@ -12,7 +12,7 @@
 
             <div class="flex-col">
                 <label for="title">Title</label>
-                <input type="text" name="title" id="name" value="{{ $article->title }}" required>
+                <input type="text" name="title" id="title" value="{{ $article->title }}" required>
                 @error('title')
                 <p style="color:red">{{ $errors->first('title') }}</p>
                 @enderror
@@ -27,6 +27,17 @@
             <div class="flex-col">
                 <label for="body">Text</label>
                 <textarea name="body" id="body" required>{{ $article->body }}</textarea>
+                @error('body')
+                <p style="color:red">{{ $errors->first('body') }}</p>
+                @enderror
+            </div>
+            <div class="flex-col">
+                <label for="tags">Text</label>
+                <select name="tags[]" id="tags" multiple>
+                    @foreach($tags as $tag)
+                        <option value="{{$tag->id}}">{{$tag->name}}</option>
+                    @endforeach
+                </select>
                 @error('body')
                 <p style="color:red">{{ $errors->first('body') }}</p>
                 @enderror

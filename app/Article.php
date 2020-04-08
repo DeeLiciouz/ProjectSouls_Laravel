@@ -12,7 +12,15 @@ class Article extends Model
         return 'slug';
     }*/
 
-    protected $fillable = ['title', 'excerpt', 'body'];
+    protected $fillable = ['title', 'excerpt', 'body', 'user_id'];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function tags(){
+        return $this->belongsToMany(Tag::class)->withTimestamps();
+    }
 
     public function getPath(){
         return route('article.show',$this);

@@ -3,7 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Article;
-use Illuminate\Http\Request;
+use App\Tag;
+use Exception;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Routing\Redirector;
+use Illuminate\View\View;
 
 class ArticlesController extends Controller
 {
@@ -12,30 +17,39 @@ class ArticlesController extends Controller
      */
     public function index()
     {
-        $articles = Article::all();
-
+        if (request('tag')) {
+            $articles = Tag::where('name', request('tag'))->firstOrFail()->articles;
+        } else {
+            $articles = Article::all();
+        }
         return view('content.articles.index', ['articles' => $articles]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @return Factory|View
      */
     public function create()
     {
-        return view('content.articles.create');
+        return view('content.articles.create', [
+            'tags' => Tag::all()
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @return RedirectResponse|Redirector
      */
-    public function store(Request $request)
+    public function store()
     {
-        $article = Article::create($this->validateArticle());
+        $this->validateArticle();
+        $article = new Article(request(['title', 'excerpt', 'body']));
+        $article->user_id = 3;
+        $article->save();
+
+        if (request('tags')) $article->tags()->attach(request('tags'));
 
         return redirect(route('article.index'));
     }
@@ -43,8 +57,8 @@ class ArticlesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Article $article
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @param Article $article
+     * @return Factory|View
      */
     public function show(Article $article)
     {
@@ -54,23 +68,32 @@ class ArticlesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Article $article
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @param Article $article
+     * @return Factory|View
      */
     public function edit(Article $article)
     {
-        return view('content.articles.edit', compact('article'));
+        return view('content.articles.edit', [
+            'article' => $article,
+            'tags' => Tag::all(),
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param \App\Article $article
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @param Article $article
+     * @return RedirectResponse|Redirector
      */
     public function update(Article $article)
     {
-        $article->update($this->validateArticle());
+        $this->validateArticle();
+
+        $article->update(request(['title', 'excerpt', 'body']));
+        $article->user_id = 3;
+        $article->save();
+
+        if(request('tags')) $article->tags()->attach(request('tags'));
 
         return redirect($article->getPath());
     }
@@ -78,8 +101,9 @@ class ArticlesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Article $article
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     * @param Article $article
+     * @return RedirectResponse|Redirector
+     * @throws Exception
      */
     public function destroy(Article $article)
     {
@@ -88,11 +112,13 @@ class ArticlesController extends Controller
         return redirect(route('article.index'));
     }
 
-    protected function validateArticle(){
+    protected function validateArticle()
+    {
         return request()->validate([
             'title' => 'required',
             'excerpt' => 'required',
             'body' => 'required',
+            'tags' => 'exists:tags,id'
         ]);
     }
 }
