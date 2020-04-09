@@ -2,42 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ffe18c-140d-4381-97ca-bfed74cd4b69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/ps_app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/ps.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/ps_app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/sass/ps_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/layout.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/layout.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/content/articles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/content/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/content/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/nav/topnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/nav/topnav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,6 +180,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -220,7 +202,9 @@
       <workItem from="1586352163842" duration="6067000" />
       <workItem from="1586364174734" duration="5056000" />
       <workItem from="1586383420892" duration="4675000" />
-      <workItem from="1586395170381" duration="7650000" />
+      <workItem from="1586395170381" duration="11855000" />
+      <workItem from="1586444149530" duration="2024000" />
+      <workItem from="1586456316710" duration="7188000" />
     </task>
     <servers />
   </component>
@@ -262,15 +246,19 @@
     </state>
     <state x="1222" y="176" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586301891668" />
     <state x="3341" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241590567" />
-    <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586395177125">
+    <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1586456317050">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586395177125" />
+    <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586456317050" />
     <state x="2903" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586271000596" />
-    <state x="976" y="257" width="737" height="596" key="find.popup" timestamp="1586402244119">
+    <state x="923" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586410953317">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="976" y="257" width="737" height="596" key="find.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586402244119" />
+    <state x="923" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586410953317" />
+    <state x="976" y="257" width="737" height="596" key="find.popup" timestamp="1586461898141">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="976" y="257" width="737" height="596" key="find.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586461898141" />
     <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586403284284">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

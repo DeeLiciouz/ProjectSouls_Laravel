@@ -1,13 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Overview</h1>
-    @forelse($articles as $article)
-        <div>
-            <a href="/news/{{$article->id}}" class="h2">{{ $article->title ?? '' }}</a>
-            <p>{{ $article->body ?? ''}}</p>
+    <div class="row flex-column mx-3">
+        <h1 class="border-bottom">Overview</h1>
+        <div class="row m-2">
+            @forelse($articles as $article)
+                <div class="card mx-2" style="max-width: 25%;">
+                    <div class="card-header">
+                        <a href="/news/{{$article->id}}" class="">{{ $article->title ?? '' }}</a>
+                    </div>
+                    <div class="card-body">
+                        <p>{{ $article->excerpt ?? '' }}</p>
+                        <p>{{ $article->body ?? ''}}</p>
+                        <a href="{{ $article->getPath() }}/edit" class="btn-link float-right">Edit</a>
+                    </div>
+                </div>
+            @empty
+                <p>No relevant articles yet.</p>
+            @endforelse
         </div>
-    @empty
-        <p>No relevant articles yet.</p>
-    @endforelse
+    </div>
 @endsection
