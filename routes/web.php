@@ -12,16 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Auth
+Auth::routes();
+
+
 //Homepage
 Route::get('/', function () {
     return view('content.welcome');
 });
+
 
 //News & Articles
 Route::post('/news', 'ArticlesController@store');
 Route::put('/news/{article}', 'ArticlesController@update');
 Route::delete('/news/{article}', 'ArticlesController@destroy');
 Route::get('/news', 'ArticlesController@index')->name('article.index');
-Route::get('/news/create', 'ArticlesController@create');
-Route::get('/news/{article}/edit', 'ArticlesController@edit');
+Route::get('/news/create', 'ArticlesController@create')->name('article.create');
+Route::get('/news/{article}/edit', 'ArticlesController@edit')->name('article.edit');
 Route::get('/news/{article}', 'ArticlesController@show')->name('article.show');

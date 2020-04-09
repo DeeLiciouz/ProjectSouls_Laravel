@@ -1,7 +1,5 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
-    <div class="title m-b-md">
-        Project Souls
-    </div>
+    <h1>Project Souls</h1>
 @endsection

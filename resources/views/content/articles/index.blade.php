@@ -1,15 +1,13 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('content')
-    <div class="flex-col">
-        <h1>Overview</h1>
-        @forelse($articles as $article)
-            <div>
-                <h2><a href="/news/{{$article->id}}">{{ $article->title ?? '' }}</a></h2>
-                <p>{{ $article->body ?? ''}}</p>
-            </div>
-            @empty
-            <p>No relevant articles yet.</p>
-        @endforelse
-    </div>
+    <h1>Overview</h1>
+    @forelse($articles as $article)
+        <div>
+            <a href="/news/{{$article->id}}" class="h2">{{ $article->title ?? '' }}</a>
+            <p>{{ $article->body ?? ''}}</p>
+        </div>
+    @empty
+        <p>No relevant articles yet.</p>
+    @endforelse
 @endsection
