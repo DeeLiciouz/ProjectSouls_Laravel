@@ -17,8 +17,6 @@ function isSecure()
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name') }}</title>
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js', isSecure()) }}" defer></script>
 
@@ -29,11 +27,14 @@ function isSecure()
     <!-- Styles -->
     <link href="{{ asset('css/app.css', isSecure()) }}" rel="stylesheet">
     <link href="{{asset('css/ps_app.css', isSecure())}}" rel="stylesheet">
+
+    <!-- Title -->
+    <title>{{ config('app.name') }}</title>
 </head>
 <body>
 <div id="app">
     @include('modules.nav.topnav')
-    <main class="container">
+    <main class="container-fluid align-items-center m-0 p-0">
         @yield('content')
     </main>
 </div>
