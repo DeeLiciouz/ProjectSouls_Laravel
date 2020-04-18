@@ -27,6 +27,12 @@ class AuthServiceProvider extends ServiceProvider
   {
     $this->registerPolicies();
 
-    //
+    //global authorization rules
+    Gate::before(function (User $user){
+      //Hardcoded until role implementation
+      if($user->id === 5){
+        return true;
+      }
+    });
   }
 }

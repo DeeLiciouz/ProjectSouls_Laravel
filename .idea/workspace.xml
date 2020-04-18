@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +194,7 @@
       <workItem from="1586487686187" duration="9555000" />
       <workItem from="1586534209410" duration="5646000" />
       <workItem from="1586794320054" duration="388000" />
-      <workItem from="1587180363273" duration="8306000" />
+      <workItem from="1587180363273" duration="13403000" />
     </task>
     <servers />
   </component>
@@ -206,6 +206,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1085" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586374461023" />
+    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog" timestamp="1587201157912">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="92" y="92" width="2376" height="856" key="DiffContextDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587201157912" />
     <state x="1060" y="274" key="FileChooserDialogImpl" timestamp="1585935081308">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -240,10 +244,10 @@
     </state>
     <state x="1222" y="176" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587192766229" />
     <state x="3341" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241590567" />
-    <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1587180363635">
+    <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1587251886611">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587180363635" />
+    <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587251886611" />
     <state x="2903" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586271000596" />
     <state x="923" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586410953317">
       <screen x="0" y="0" width="2560" height="1040" />

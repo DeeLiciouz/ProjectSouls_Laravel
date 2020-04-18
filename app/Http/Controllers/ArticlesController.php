@@ -73,8 +73,6 @@ class ArticlesController extends Controller
    */
   public function edit(Article $article)
   {
-    $this->authorize('update', $article);
-
     return view('content.articles.edit', [
       'article' => $article,
       'tags' => Tag::all(),
