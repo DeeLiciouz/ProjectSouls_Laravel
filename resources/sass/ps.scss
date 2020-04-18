@@ -1,66 +1,71 @@
 body {
-    background-color: $ps-black;
+  background-color: $ps-black;
 }
 
 .ps-article-link, .ps-article-link:hover {
-    color: $ps-darkgrey;
-    text-decoration: none;
+  color: $ps-darkgrey;
+  text-decoration: none;
 }
 
 .ps-bg-content {
-    background-color: $ps-darkgrey;
+  background-color: $ps-darkgrey;
 }
 
 .card {
-    background-color: $ps-darkgrey;
-    border: 1px solid $ps-green;
+  background-color: $ps-darkgrey;
+  border: 1px solid $ps-green;
 }
 
 .card-header {
-    background-color: $ps-green;
+  background-color: $ps-green;
 }
 
 .dropdown-menu {
-    background-color: $ps-darkgrey;
+  background-color: $ps-darkgrey;
 }
 
 .dropdown-item {
-    color: $ps-green;
+  color: $ps-green;
 }
 
 .dropdown-item:hover {
-    background-color: $ps-green;
-    color: $ps-black;
+  background-color: $ps-green;
+  color: $ps-black;
 }
 
 .navbar {
-    background-color: $ps-black;
-    border-bottom: 2px solid $ps-darkgrey;
+  background-color: $ps-black;
+  border-bottom: 2px solid $ps-darkgrey;
 }
 
 .navbar-collapse .show {
-    background-color: $ps-darkgrey;
-    padding: 5px;
+  background-color: $ps-darkgrey;
+  padding: 5px;
 }
 
 .navbar-brand, .nav-link {
-    color: $ps-green !important;
+  color: $ps-green !important;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(186, 218, 85, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(186, 218, 85, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-.ps-btn {
+.ps-btn, .ps-btn-tag{
     color: $ps-black;
     background: $ps-green;
 }
 
+.ps-btn-tag {
+  border: 1px solid $ps-green;
+  border-radius: 25px;
+}
+
 .ps-text-welcome {
-    font-size: 3rem;
-    color: $ps-green;
+  font-size: 3rem;
+  color: $ps-green;
 }
 
 .ps-text-green {
-    color: $ps-green;
+  color: $ps-green;
 }
