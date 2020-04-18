@@ -2,7 +2,11 @@
 
 @section('content')
   <div class="container ps-bg-content">
-    <a href="{{ $article->getPath() }}/edit" class="btn ps-btn m-1 float-right">Edit</a>
+
+    @can ('update', $article)
+      <a href="{{ $article->getPath() }}/edit" class="btn ps-btn m-1 float-right">Edit</a>
+    @endcan
+
     <h1 class="py-5 ps-text-green">{{$article->title}}</h1>
     <p class="text-white">{{$article->excerpt}}</p>
     <p class="text-white">{{$article->body}}</p>
