@@ -28,10 +28,13 @@ class AuthServiceProvider extends ServiceProvider
     $this->registerPolicies();
 
     //global authorization rules
-    Gate::before(function (User $user){
-      //Hardcoded until role implementation
-      if($user->id === 5){
+    Gate::before(function (User $user, $ability) {
+      if ($user->roles->pluck('name')->contains('admin')) {
         return true;
+      } elseif ($user->abilities()->contains($ability)) {
+        return true;
+      } else {
+        return false;
       }
     });
   }

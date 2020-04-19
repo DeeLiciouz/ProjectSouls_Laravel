@@ -8,7 +8,7 @@
   <div class="row justify-content-center">
     <div class="col-md-8">
       <div class="card">
-        <div class="card-header">{{ __('Edit Article') }}</div>
+        <div class="card-header font-weight-bold">{{ __('Edit Article') }}</div>
 
         <div class="card-body">
           <form method="POST" action="{{ $article->getPath() }}">

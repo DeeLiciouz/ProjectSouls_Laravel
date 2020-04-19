@@ -9,14 +9,14 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">{{ __('New Article') }}</div>
+          <div class="card-header font-weight-bold">{{ __('New Article') }}</div>
 
           <div class="card-body">
             <form method="POST" action="{{ route('article.index') }}">
               @csrf
 
               <div class="form-group row">
-                <label for="title" class="col-md-4 col-form-label text-md-right">
+                <label for="title" class="col-md-4 col-form-label text-md-right ps-text-green">
                   {{ __('Title') }}
                 </label>
 
@@ -38,7 +38,7 @@
               </div>
 
               <div class="form-group row">
-                <label for="excerpt" class="col-md-4 col-form-label text-md-right">
+                <label for="excerpt" class="col-md-4 col-form-label text-md-right ps-text-green">
                   {{ __('Excerpt') }}
                 </label>
 
@@ -59,7 +59,7 @@
               </div>
 
               <div class="form-group row">
-                <label for="body" class="col-md-4 col-form-label text-md-right">
+                <label for="body" class="col-md-4 col-form-label text-md-right ps-text-green">
                   {{ __('Text') }}
                 </label>
 
@@ -78,7 +78,7 @@
               </div>
 
               <div class="form-group row">
-                <label for="tags" class="col-md-4 col-form-label text-md-right">
+                <label for="tags" class="col-md-4 col-form-label text-md-right ps-text-green">
                   {{ __('Tags') }}
                 </label>
 

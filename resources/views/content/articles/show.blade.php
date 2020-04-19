@@ -3,7 +3,7 @@
 @section('content')
   <div class="container ps-bg-content">
 
-    @can ('update', $article)
+    @can('update', $article)
       <a href="{{ $article->getPath() }}/edit" class="btn ps-btn m-1 float-right">Edit</a>
     @endcan
 

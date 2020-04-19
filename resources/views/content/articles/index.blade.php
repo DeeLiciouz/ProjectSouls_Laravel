@@ -5,8 +5,8 @@
     <h1 class="border-bottom ps-text-green">Overview</h1>
     <div class="row">
       @forelse($articles as $article)
-        <div class="col">
-          <div class="card mx-2">
+        <div class="col-md-4 p-2">
+          <div class="card mx-1">
             <div class="card-header">
               <a href="/news/{{$article->id}}" class="h3 ps-article-link">{{ $article->title ?? '' }}</a>
             </div>
