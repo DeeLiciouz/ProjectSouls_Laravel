@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ffe18c-140d-4381-97ca-bfed74cd4b69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/game/homescreen.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modules/nav/topnav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/nav/topnav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,8 +141,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,7 +168,6 @@
         </serviceView>
       </list>
     </option>
-    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -195,6 +196,7 @@
       <workItem from="1586534209410" duration="5646000" />
       <workItem from="1586794320054" duration="388000" />
       <workItem from="1587180363273" duration="13403000" />
+      <workItem from="1587251886162" duration="2957000" />
     </task>
     <servers />
   </component>
@@ -235,14 +237,14 @@
     </state>
     <state x="474" y="446" key="NewPhpFileDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586274720670" />
     <state x="3034" y="446" key="NewPhpFileDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241245559" />
-    <state x="1076" y="230" key="RollbackChangesDialog" timestamp="1587193491887">
+    <state x="1076" y="230" key="RollbackChangesDialog" timestamp="1587252910269">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1076" y="230" key="RollbackChangesDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587193491887" />
-    <state x="1222" y="176" key="SettingsEditor" timestamp="1587192766229">
+    <state x="1076" y="230" key="RollbackChangesDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587252910269" />
+    <state x="1222" y="176" key="SettingsEditor" timestamp="1587253524457">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1222" y="176" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587192766229" />
+    <state x="1222" y="176" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587253524457" />
     <state x="3341" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241590567" />
     <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1587251886611">
       <screen x="0" y="0" width="2560" height="1040" />
@@ -253,21 +255,21 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="923" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586410953317" />
-    <state x="1089" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587192598617">
+    <state x="1089" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587253358349">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1089" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587192598617" />
-    <state x="1560" y="230" width="737" height="596" key="find.popup" timestamp="1587180729107">
+    <state x="1089" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587253358349" />
+    <state x="1560" y="230" width="737" height="596" key="find.popup" timestamp="1587252484746">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="1560" y="230" width="737" height="596" key="find.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587180729107" />
+    <state x="1560" y="230" width="737" height="596" key="find.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587252484746" />
     <state x="936" y="240" key="run.anything.popup" timestamp="1586493517796">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="936" y="240" key="run.anything.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586493517796" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1586494655686">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587252496206">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586494655686" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587252496206" />
   </component>
 </project>

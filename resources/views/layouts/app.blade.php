@@ -18,6 +18,7 @@ function isSecure()
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <!-- Scripts -->
+  @yield('headscripts')
   <script src="{{ asset('js/app.js', isSecure()) }}" defer></script>
 
   <!-- Fonts -->

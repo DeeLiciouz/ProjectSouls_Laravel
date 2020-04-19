@@ -30,3 +30,6 @@ Route::get('/news', 'ArticlesController@index')->name('article.index');
 Route::get('/news/create', 'ArticlesController@create')->name('article.create');
 Route::get('/news/{article}/edit', 'ArticlesController@edit')->name('article.edit')->middleware('can:update,article');
 Route::get('/news/{article}', 'ArticlesController@show')->name('article.show');
+
+//Game
+Route::get('/game', 'GameController@homescreen')->name('game.homescreen');

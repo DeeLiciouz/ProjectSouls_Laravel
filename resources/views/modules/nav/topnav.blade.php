@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a href="{{route('article.index')}}" class="nav-link">News</a>
         </li>
+        <li class="nav-item">
+          <a href="{{route('game.homescreen')}}" class="nav-link">Game</a>
+        </li>
       </ul>
 
       <!-- Right Side Of Navbar -->
