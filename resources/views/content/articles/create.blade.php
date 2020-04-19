@@ -16,7 +16,7 @@
               @csrf
 
               <div class="form-group row">
-                <label for="title" class="col-md-4 col-form-label text-md-right ps-text-green">
+                <label for="title" class="col-md-4 col-form-label text-md-right">
                   {{ __('Title') }}
                 </label>
 
@@ -38,7 +38,7 @@
               </div>
 
               <div class="form-group row">
-                <label for="excerpt" class="col-md-4 col-form-label text-md-right ps-text-green">
+                <label for="excerpt" class="col-md-4 col-form-label text-md-right">
                   {{ __('Excerpt') }}
                 </label>
 
@@ -59,7 +59,7 @@
               </div>
 
               <div class="form-group row">
-                <label for="body" class="col-md-4 col-form-label text-md-right ps-text-green">
+                <label for="body" class="col-md-4 col-form-label text-md-right">
                   {{ __('Text') }}
                 </label>
 
@@ -78,7 +78,7 @@
               </div>
 
               <div class="form-group row">
-                <label for="tags" class="col-md-4 col-form-label text-md-right ps-text-green">
+                <label for="tags" class="col-md-4 col-form-label text-md-right">
                   {{ __('Tags') }}
                 </label>
 

@@ -29,13 +29,12 @@ class AuthServiceProvider extends ServiceProvider
 
     //global authorization rules
     Gate::before(function (User $user, $ability) {
-      if ($user->roles->pluck('name')->contains('admin')) {
-        return true;
-      } elseif ($user->abilities()->contains($ability)) {
-        return true;
-      } else {
-        return false;
-      }
+      $authorized = false;
+
+      if ($user->roles->pluck('name')->contains('admin')) $authorized = true;
+      elseif ($user->abilities()->contains($ability)) $authorized = true;
+
+      return $authorized;
     });
   }
 }

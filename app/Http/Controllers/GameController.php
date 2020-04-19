@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class GameController extends Controller
 {
-    public function homescreen(){
-      return view('game.homescreen');
-    }
+  public function homescreen()
+  {
+    return view('game.homescreen');
+  }
 }

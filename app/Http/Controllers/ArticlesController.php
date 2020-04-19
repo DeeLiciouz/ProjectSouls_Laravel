@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
 
 class ArticlesController extends Controller
@@ -46,7 +47,7 @@ class ArticlesController extends Controller
   {
     $this->validateArticle();
     $article = new Article(request(['title', 'excerpt', 'body']));
-    $article->user_id = 5;
+    $article->user_id = Auth::user()->id;
     $article->save();
 
     if (request('tags')) $article->tags()->attach(request('tags'));
@@ -90,7 +91,7 @@ class ArticlesController extends Controller
     $this->validateArticle();
 
     $article->update(request(['title', 'excerpt', 'body']));
-    $article->user_id = 5;
+    $article->user_id = Auth::user()->id;
     $article->save();
 
     if (request('tags')) $article->tags()->attach(request('tags'));
