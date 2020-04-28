@@ -18,7 +18,7 @@ Auth::routes();
 
 //Homepage
 Route::get('/', function () {
-    return view('content.welcome');
+  return view('content.welcome');
 });
 
 
@@ -26,10 +26,28 @@ Route::get('/', function () {
 Route::post('/news', 'ArticlesController@store');
 Route::put('/news/{article}', 'ArticlesController@update');
 Route::delete('/news/{article}', 'ArticlesController@destroy');
-Route::get('/news', 'ArticlesController@index')->name('article.index');
-Route::get('/news/create', 'ArticlesController@create')->name('article.create');
-Route::get('/news/{article}/edit', 'ArticlesController@edit')->name('article.edit')->middleware('can:update,article');
-Route::get('/news/{article}', 'ArticlesController@show')->name('article.show');
+
+Route::get('/news', 'ArticlesController@index')
+  ->name('article.index');
+
+Route::get('/news/create', 'ArticlesController@create')
+  ->middleware('can:create_article')
+  ->name('article.create');
+
+Route::get('/news/{article}/edit', 'ArticlesController@edit')
+  ->middleware('can:update,article')
+  ->name('article.edit');
+
+Route::get('/news/{article}', 'ArticlesController@show')
+  ->name('article.show');
+
 
 //Game
-Route::get('/game', 'GameController@homescreen')->name('game.homescreen');
+Route::get('/game', 'GameController@homescreen')
+  ->name('game.homescreen');
+
+
+//Admin
+Route::get('/admin', 'AdminController@index')
+  ->middleware('can:access_admin')
+  ->name('admin.index');

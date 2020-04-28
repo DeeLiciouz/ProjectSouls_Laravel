@@ -6,8 +6,8 @@ label {
   color: #bada55;
 }
 
-.ps-article-link,
-.ps-article-link:hover {
+.ps-card-link,
+.ps-card-link:hover {
   color: #333333;
   text-decoration: none;
 }

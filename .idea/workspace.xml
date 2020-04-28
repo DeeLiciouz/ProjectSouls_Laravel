@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ffe18c-140d-4381-97ca-bfed74cd4b69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/phaser/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/content/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/ArticlePolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/ps_app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/ps_app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/ps.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/ps.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/content/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/content/articles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/game/homescreen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game/homescreen.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/modules/nav/elements/authentication.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/nav/elements/authentication.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/modules/nav/elements/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/nav/elements/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +31,7 @@
       <list>
         <option value="Laravel Controller" />
         <option value="Blade Content-Template" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -206,7 +205,12 @@
       <workItem from="1586794320054" duration="388000" />
       <workItem from="1587180363273" duration="13403000" />
       <workItem from="1587251886162" duration="3003000" />
-      <workItem from="1587265589113" duration="11255000" />
+      <workItem from="1587265589113" duration="11294000" />
+      <workItem from="1587327018499" duration="3485000" />
+      <workItem from="1587351429802" duration="2776000" />
+      <workItem from="1587401513715" duration="599000" />
+      <workItem from="1587410532123" duration="1158000" />
+      <workItem from="1588107864680" duration="11000" />
     </task>
     <servers />
   </component>
@@ -256,10 +260,10 @@
     </state>
     <state x="1222" y="176" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587267931087" />
     <state x="3341" y="162" key="SettingsEditor/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586241590567" />
-    <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1587265595307">
+    <state x="343" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1588107866895">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587265595307" />
+    <state x="343" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1588107866895" />
     <state x="2903" y="343" key="com.intellij.ide.util.TipDialog/0.0.2560.1040/2560.0.2560.1040@2560.0.2560.1040" timestamp="1586271000596" />
     <state x="923" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586410953317">
       <screen x="0" y="0" width="2560" height="1040" />
@@ -277,9 +281,9 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="936" y="240" key="run.anything.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1586493517796" />
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587252496206">
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587329986148">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587252496206" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/2560.0.2560.1040@0.0.2560.1040" timestamp="1587329986148" />
   </component>
 </project>
